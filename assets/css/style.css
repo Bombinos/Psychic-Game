@@ -1,4 +1,15 @@
+body {
+    background-color: rgb(233, 255, 230);
+}
 
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    color: rgb(59, 9, 105);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    font-size: 50px;
+}
 
 
 
