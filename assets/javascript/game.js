@@ -33,11 +33,11 @@
             }
 
             
-            guesses.push(userGuess)  ;
-            // document.querySelector("#Gary").innerHTML = hiyocaiundai
-    
-        
-            document.querySelector("#Gary").innerHTML = hiyocaiundai;
-     
-        }
-    
+    guesses.push(userGuess);
+   
+    document.querySelector("#compScreen").innerHTML = userGuess;
+
+    document.querySelector("#Gary").innerHTML = hiyocaiundai;
+
+}
+
