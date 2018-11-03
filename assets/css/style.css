@@ -36,8 +36,8 @@ p {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
     color: rgb(11, 3, 58);
-    font-size: 26px;
-    margin: 20px 0px 20px 0px;
+    font-size: 28px;
+    margin: 27px 0px 0px 0px;
 }
 
 #row {
@@ -79,17 +79,18 @@ img {
     top: 4%;
 }
 
-#rightPanel {
+/* #rightPanel {
     vertical-align: top;
     display: inline-block;
     text-align: top;
     
-}
+} */
 
 #leftPanel {
     vertical-align: top;
     display: inline-block;
-    text-align: top;
+    margin-right: 10px;
+    line-height: 50px;
 }
 
 
