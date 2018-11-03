@@ -1,44 +1,59 @@
-     var computerChoices = ["a", "b", "c", "d", "e"];
-     var wins = 0;
-     var losses = 0;
-     var gsLeft = 2;
-     var guesses = [];
-     var computerGuess = null;
+var computerChoices = ["a", "b", "c", "d", "e"];
+var wins = 0;
+var losses = 0;
+var guessesLeft = 3;
+var guesses = [];
+var computerGuess = null;
 
-     var updateComputerGuess = function() {
-         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
-     };
+var updateGuessesLeft = function () {
+    document.querySelector("#guesses-left").innerHTML = guessesLeft;
+};
 
-     var reset = function() {
-         gsLeft = 2;
-         guesses = [];
-         updateComputerGuess();
-        };
-    
-        updateComputerGuess();
+var updateComputerGuess = function () {
+    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
+};
+
+var updateGuesses = function () {
+    document.querySelector("#userGuess").innerHTML = guesses.join(", ");
+};
+
+var reset = function () {
+    guessesLeft = 3;
+    guesses = [];
+    updateComputerGuess();
+    updateGuessesLeft();
+    updateGuesses();
+};
+
+updateComputerGuess();
 
 document.addEventListener('keydown', function (event) {
     if ((event.code == 'KeyA') || (event.code == 'KeyB') || (event.code == 'KeyC') || (event.code == 'KeyD') || (event.code == 'KeyE')) {
         var userGuess = event.key;
-        
-        
+
+        guessesLeft--
+        guesses.push(userGuess);
+
+        updateGuessesLeft();
+        updateGuesses();
 
         if (userGuess == computerGuess) {
             wins++;
+            document.querySelector("#wins").innerHTML = wins;
+            document.querySelector("#computerGuess").innerHTML = computerGuess;
             reset();
         }
 
-        if (gsLeft == 0) {
+        if (guessesLeft == 0) {
             losses++;
+            document.querySelector("#losses").innerHTML = losses;
+            document.querySelector("#computerGuess").innerHTML = computerGuess;
             reset();
         }
 
-        gsLeft--
-        guesses.push(userGuess);
+
 
         document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
-
-        // document.querySelector("#Gary").innerHTML = hiyocaiundai;
 
     } else {
         console.log("wrong key")
@@ -46,11 +61,7 @@ document.addEventListener('keydown', function (event) {
 
 });
 
-// var hiyocaiundai =
-//             "<p>You chose: " + userGuess + "</p>" +
-//             "<p>The computer chose: " + computerGuess + "</p>" +
-//             "<p>wins: " + wins + "</p>" +
-//             "<p>losses: " + losses + "</p>" + "<p>Guesses left: " + gsLeft + "</p>" + "<p>Guesses made: " + guesses + "</p";
+
 
 
 
