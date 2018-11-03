@@ -75,6 +75,23 @@ img {
     top: 4%;
 }
 
+.col-1 {
+    float: left;
+    min-height: 1px; 
+    width: 16.66%; 
+}
+
+.row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+
+.grid-container {
+    box-sizing: border-box; 
+}
+
 
 
 @media screen and (max-width: 1600px) {
