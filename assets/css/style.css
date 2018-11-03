@@ -116,7 +116,7 @@ img {
 
 } */
 
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
     #imageWrap {
         display: inline-block;
         width: auto;
@@ -136,5 +136,5 @@ img {
         left: 25%;
         
      }
-}
+} */
 
