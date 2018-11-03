@@ -15,12 +15,23 @@
     <h3>Guess what letter the computer is thinking of</h3>
     <H4>Choose from the letters A, B, C, D, or E</H4>
     <H4 id="h4b">to play</H4>
-        <div id="picContainer">
+    <div id="row">
+        <div id="Container">
+            <div id="leftPanel">
+                <p>Your Guess: <span id="userGuess"> </span></p>
+                <p>The Computer's Guess: <span id="computerGuess"> </span></p>
+                <p>Wrong Guesses: <span id="userGuess"> </span></p>
+            </div>
             <div id="imageWrap">
                 <img src="assets/images/futureMan.png">
                 <div id="compScreen">Z</div>
             </div>
+            <div id="rightPanel">
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>

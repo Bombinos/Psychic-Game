@@ -48,10 +48,10 @@ p {
 
 #imageWrap {
    display: inline-block;
+   position: relative;
    width: auto;
    height: 400px;
-   position: relative;
-   left: 33.33%;
+   left: 35%;
 }
 
 img {
@@ -75,24 +75,30 @@ img {
     top: 4%;
 }
 
-.col-1 {
-    float: left;
-    min-height: 1px; 
-    width: 16.66%; 
+#rightPanel {
+    display: block;
+    position: relative;
+    text-align: top;
+    
 }
 
-.row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;
-    }
-
-.grid-container {
-    box-sizing: border-box; 
+#leftPanel {
+    display: block;
+    position: relative;
+    text-align: top;
 }
 
 
+
+@media screen and (max-width: 1800px) {
+    #imageWrap {
+        display: inline-block;
+        width: auto;
+        height: 400px;
+        position: relative;
+        left: 35%;
+     }
+}
 
 @media screen and (max-width: 1600px) {
     #imageWrap {
@@ -100,7 +106,7 @@ img {
         width: auto;
         height: 400px;
         position: relative;
-        left: 33.33%;
+        left: 35%;
      }
 
 }
