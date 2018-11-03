@@ -56,7 +56,7 @@ document.addEventListener('keydown', function (event) {
         document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
 
     } else {
-        console.log("wrong key")
+        alert("Wrong Key. Please select from characters A, B, C, D, or E")
     }
 
 });
