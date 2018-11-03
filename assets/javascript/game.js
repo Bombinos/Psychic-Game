@@ -32,7 +32,7 @@ document.addEventListener('keydown', function (event) {
         var userGuess = event.key;
 
         guessesLeft--
-        guesses.push(userGuess);
+        guesses.push(userGuess.toUpperCase());
 
         updateGuessesLeft();
         updateGuesses();
@@ -40,14 +40,14 @@ document.addEventListener('keydown', function (event) {
         if (userGuess == computerGuess) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
-            document.querySelector("#computerGuess").innerHTML = computerGuess;
+            document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
         if (guessesLeft == 0) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
-            document.querySelector("#computerGuess").innerHTML = computerGuess;
+            document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 

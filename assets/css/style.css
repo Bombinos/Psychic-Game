@@ -13,7 +13,7 @@ h1 {
 }
 
 h3 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Fredoka One', cursive;
     text-align: center;
     color: rgb(3, 58, 10);
     font-size: 36px;
@@ -33,11 +33,11 @@ h4 {
 }
 
 p {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Jua', sans-serif;
     text-align: center;
     color: rgb(78, 22, 116);
-    font-size: 28px;
-    margin: 27px 0px 0px 0px;
+    font-size: 32px;
+    margin: 16px 0px 0px 0px;
 }
 
 #row {
