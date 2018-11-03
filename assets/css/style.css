@@ -40,9 +40,14 @@ p {
     margin: 20px 0px 20px 0px;
 }
 
+#row {
+    text-align: center;
+}
+
 #picContainer {
    height: 420px;
-    max-width: 100%;
+   width: auto;
+   text-align: center;
     
 }
 
@@ -51,7 +56,6 @@ p {
    position: relative;
    width: auto;
    height: 400px;
-   left: 35%;
 }
 
 img {
@@ -76,21 +80,21 @@ img {
 }
 
 #rightPanel {
-    display: block;
-    position: relative;
+    vertical-align: top;
+    display: inline-block;
     text-align: top;
     
 }
 
 #leftPanel {
-    display: block;
-    position: relative;
+    vertical-align: top;
+    display: inline-block;
     text-align: top;
 }
 
 
 
-@media screen and (max-width: 1800px) {
+/* @media screen and (max-width: 1800px) {
     #imageWrap {
         display: inline-block;
         width: auto;
@@ -109,7 +113,7 @@ img {
         left: 35%;
      }
 
-}
+} */
 
 @media screen and (max-width: 980px) {
     #imageWrap {
