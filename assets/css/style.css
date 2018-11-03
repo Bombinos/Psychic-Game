@@ -96,15 +96,15 @@ img {
     margin-right: 10px;
     line-height: 50px;
 }
-
+/* rgb(248, 248, 219) */
 .button {
     font-family: 'Jua', sans-serif;
     font-weight: bold;
-    background-color: rgb(248, 248, 219);
-    border: rgb(78, 22, 116);
-    color: rgb(78, 22, 116);
+    background-color: rgb(61, 13, 94);
+    border: rgb(181, 211, 184);
+    color: rgb(181, 211, 184);
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     border-radius: 20px;
     width: 140px;
     padding: 3px 32px 3px 32px;
@@ -114,6 +114,14 @@ img {
     margin: 10px 9px 0px 9px;
     cursor: pointer;
 }
+
+button:hover {
+    border-style: outset;
+    background-color: rgb(98, 13, 155);
+    color: rgb(111, 255, 135);
+    border-color: rgb(111, 255, 135);
+
+    /* rgb(61, 13, 94) */
 
 /* @media screen and (max-width: 1800px) {
     #imageWrap {
