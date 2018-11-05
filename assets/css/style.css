@@ -121,7 +121,11 @@ button:hover {
     color: rgb(111, 255, 135);
     border-color: rgb(111, 255, 135);
 
-    /* rgb(61, 13, 94) */
+}
+
+button:focus {
+    outline:0;
+}
 
 /* @media screen and (max-width: 1800px) {
     #imageWrap {
