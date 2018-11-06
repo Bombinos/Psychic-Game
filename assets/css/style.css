@@ -1,5 +1,10 @@
+html {
+    width: 100%;
+}
+
 body {
     background-color: rgb(233, 255, 230);
+    max-width: 100%;
 }
 
 h1 {
@@ -10,6 +15,7 @@ h1 {
     border-bottom-width: 5px;
     font-size: 50px;
     margin: 10px 0px 0px 0px; 
+    width: 100%;
 }
 
 h3 {
@@ -32,6 +38,10 @@ h4 {
     margin: 5px 0px 15px 0px;
 }
 
+#container {
+    width: 100%;
+}
+
 p {
     font-family: 'Jua', sans-serif;
     text-align: center;
@@ -52,6 +62,7 @@ p {
 }
 
 #imageWrap {
+   margin: 20px 20px 20px 10px;
    display: inline-block;
    position: relative;
    width: auto;
@@ -93,7 +104,7 @@ img {
 #leftPanel {
     vertical-align: top;
     display: inline-block;
-    margin-right: 10px;
+    margin: 20px 10px 20px 20px;
     line-height: 50px;
 }
 /* rgb(248, 248, 219) */
@@ -120,24 +131,317 @@ button:hover {
     background-color: rgb(98, 13, 155);
     color: rgb(111, 255, 135);
     border-color: rgb(111, 255, 135);
-
 }
 
 button:focus {
     outline:0;
 }
 
-/* @media screen and (max-width: 1800px) {
+@media screen and (max-width: 900px) {
+
+    html {
+        width: 100%;
+    }
+    
+    body {
+        background-color: rgb(233, 255, 230);
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-family: 'Luckiest Guy', cursive;
+        text-align: center;
+        color: rgb(59, 9, 105);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        font-size: 40px;
+        margin: 10px 0px 0px 0px; 
+    }
+    
+    h3 {
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+        color: rgb(3, 58, 10);
+        font-size: 30px;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    h4 {
+        font-family: 'Jua', sans-serif;
+        text-align: center;
+        color: rgb(3, 58, 10);
+        font-size: 18px;
+        margin: 10px 10px 0px 10px;
+    }
+    
+    #h4b {
+        margin: 5px 0px 0px 0px;
+        width: 100%;
+    }
+    
+    #container {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    p {
+        font-family: 'Jua', sans-serif;
+        text-align: center;
+        color: rgb(78, 22, 116);
+        font-size: 24px;
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+    }
+    
+    #row {
+        text-align: center;
+        display: inline;
+    }
+    
+    #picContainer {
+       width: auto;
+       text-align: center;
+       display: inline-block;
+       height: 250px;
+        
+    }
+    
     #imageWrap {
         display: inline-block;
-        width: auto;
-        height: 400px;
         position: relative;
-        left: 35%;
+        width: auto;
+        height: 230px;
      }
+
+    img {
+        display: block;  
+        height:230px;
+        border: rgb(78, 22, 116);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+    }
+    
+    #compScreen {
+        line-height: 29px;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 3;
+        height: 27px;
+        width: 30px;
+        font-family: 'Jua', sans-serif;
+        font-size: 32px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 72%;
+        top: 6%;
+    }
+    
+    /* #rightPanel {
+        vertical-align: top;
+        display: inline-block;
+        text-align: top;
+        
+    } */
+    
+    #leftPanel {
+        display: inline-block;
+        margin: 10px 10px 10px 10px;
+        line-height: 28px;
+    }
+    /* rgb(248, 248, 219) */
+
+    #buttonWrap {
+        display: inline-block;
+        margin: 20px 10px 0px 10px;
+    }
+
+    .button {
+        font-family: 'Jua', sans-serif;
+        font-weight: bold;
+        background-color: rgb(61, 13, 94);
+        border: rgb(181, 211, 184);
+        color: rgb(181, 211, 184);
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 20px;
+        padding: 3px 16px 3px 16px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        margin: 10px 5px 0px 5px;
+        cursor: pointer;
+        width: 100px;
+        
+    }
+    
+    button:hover {
+        border-style: outset;
+        background-color: rgb(98, 13, 155);
+        color: rgb(111, 255, 135);
+        border-color: rgb(111, 255, 135);
+    }
+    
+    button:focus {
+        outline:0;
+    }
 }
 
-@media screen and (max-width: 1600px) {
+ @media screen and (max-width: 600px) {
+
+    html {
+        width: 100%;
+    }
+    
+    body {
+        background-color: rgb(233, 255, 230);
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-family: 'Luckiest Guy', cursive;
+        text-align: center;
+        color: rgb(59, 9, 105);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        font-size: 40px;
+        margin: 10px 0px 0px 0px; 
+    }
+    
+    h3 {
+        font-family: 'Fredoka One', cursive;
+        text-align: center;
+        color: rgb(3, 58, 10);
+        font-size: 30px;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    h4 {
+        font-family: 'Jua', sans-serif;
+        text-align: center;
+        color: rgb(3, 58, 10);
+        font-size: 18px;
+        margin: 10px 10px 0px 10px;
+    }
+    
+    #h4b {
+        margin: 5px 0px 0px 0px;
+        width: 100%;
+    }
+    
+    #container {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    p {
+        font-family: 'Jua', sans-serif;
+        text-align: center;
+        color: rgb(78, 22, 116);
+        font-size: 24px;
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+    }
+    
+    #row {
+        text-align: center;
+        display: inline;
+    }
+    
+    #picContainer {
+       width: auto;
+       text-align: center;
+       display: inline-block;
+       height: 250px;
+       margin: 5px 0px 5px 0px;
+        
+    }
+    
+    #imageWrap {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        height: 230px;
+        margin: 0px;
+     }
+
+    img {
+        display: block;  
+        height:230px;
+        border: rgb(78, 22, 116);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+    }
+    
+    #compScreen {
+        line-height: 29px;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 3;
+        height: 27px;
+        width: 30px;
+        font-family: 'Jua', sans-serif;
+        font-size: 32px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 72%;
+        top: 6%;
+    }
+    
+    /* #rightPanel {
+        vertical-align: top;
+        display: inline-block;
+        text-align: top;
+        
+    } */
+    
+    #leftPanel {
+        display: inline-block;
+        margin: 10px 10px 10px 10px;
+        line-height: 28px;
+    }
+    /* rgb(248, 248, 219) */
+
+    #buttonWrap {
+        display: inline-block;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .button {
+        font-family: 'Jua', sans-serif;
+        font-weight: bold;
+        background-color: rgb(61, 13, 94);
+        border: rgb(181, 211, 184);
+        color: rgb(181, 211, 184);
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 20px;
+        padding: 3px 16px 3px 16px;
+        text-align: center;
+        display: inline-block;
+        font-size: 24px;
+        margin: 10px 5px 0px 5px;
+        cursor: pointer;
+        width: 100px;
+        
+    }
+    
+    button:hover {
+        border-style: outset;
+        background-color: rgb(98, 13, 155);
+        color: rgb(111, 255, 135);
+        border-color: rgb(111, 255, 135);
+    }
+    
+    button:focus {
+        outline:0;
+    }
+}
+
+/* @media screen and (max-width: 1600px) {
     #imageWrap {
         display: inline-block;
         width: auto;
@@ -146,7 +450,7 @@ button:focus {
         left: 35%;
      }
 
-} */
+}  */
 
 /* @media screen and (max-width: 980px) {
     #imageWrap {

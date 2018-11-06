@@ -3,11 +3,13 @@
 
 <head>
     <title>Guessing Game</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -15,13 +17,13 @@
     <h1>Can you predict the future?</h1>
     <h3>Guess what letter the computer is thinking of</h3>
     <H4>Choose from the letters A, B, C, D, or E</H4>
-    <H4 id="h4b">to play</H4>
+    
     <div id="row">
         <div id="Container">
             <div id="leftPanel">
-                <p>Guesses Remaining: <span id="guesses-left"></span></p>
+                <p>Guesses Remaining: <span id="guesses-left">3</span></p>
                 <p>Your Guesses: <span id="userGuess"></span></p>
-                <p>Computer's Guess: <span id="computerGuess"></span></p>
+                <p>The Computer's Guess: <span id="computerGuess"></span></p>
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
@@ -33,17 +35,16 @@
     </div>
     <div id="row">
         <div id="container">
-                
-            <button class="button" id="btnA">A</button>
-            <button class="button" id="btnB">B</button>
-            <button class="button" id="btnC">C</button>
-            <button class="button" id="btnD">D</button>
-            <button class="button" id="btnE">E</button>
+            <div id=buttonWrap>
+
+                <button class="button" id="btnA">A</button>
+                <button class="button" id="btnB">B</button>
+                <button class="button" id="btnC">C</button>
+                <button class="button" id="btnD">D</button>
+                <button class="button" id="btnE">E</button>
+            </div>
         </div>
     </div>
 </body>
 
 </html>
-
-
-    
