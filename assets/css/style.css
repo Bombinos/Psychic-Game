@@ -256,21 +256,19 @@ button:focus {
     }
     
 #compScreen {
-    
-        line-height: smaller;
-        vertical-align: middle;
-        text-align: center;
-        z-index: 3;
-        height: 55px;
-        width: 50px;
-        font-family: 'Jua', sans-serif;
-        font-size: 60px;
-        color: black;
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        left: 72.75%;
-        top: 30%;
-    
+    line-height: smaller;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 3;
+    height: 44px;
+    width: 44px;
+    font-family: 'Jua', sans-serif;
+    font-size: 44px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 71%;
+    top: 70%;
 }
 
     /* #rightPanel {
@@ -431,15 +429,15 @@ button:focus {
         vertical-align: middle;
         text-align: center;
         z-index: 3;
-        height: 55px;
-        width: 50px;
+        height: 44px;
+        width: 44px;
         font-family: 'Jua', sans-serif;
-        font-size: 60px;
+        font-size: 44px;
         color: black;
         background-color: rgb(255, 255, 255);
         position: absolute;
-        left: 72.75%;
-        top: 30%;
+        left: 71%;
+        top: 70%;
     }
     
     /* #rightPanel {
