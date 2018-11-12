@@ -45,6 +45,7 @@ document.addEventListener('keydown', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -52,44 +53,19 @@ document.addEventListener('keydown', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
 
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
 
     }else {
         alert("Wrong Key. Please select A, B, C, or D");
     }
 });
 
-
-// document.addEventListener('click', function (event) {
-// var keySimA = function () {
-//     userGuess = "A";
-//     console.log(userGuess)
-// };
-
-// var keySimB = function () {
-//     userGuess = "B";
-//     console.log(userGuess)
-// };
-
-// var keySimC = function () {
-//     userGuess = "C";
-//     console.log(userGuess)
-// };
-
-// var keySimD = function () {
-//     userGuess = "D";
-//     console.log(userGuess)
-// };
-
-// var keySimE = function () {
-//     userGuess = "E";
-//     console.log(userGuess)
-// };
 
 document.addEventListener('mouseover', function (event) {
 
@@ -106,6 +82,7 @@ document.addEventListener('mouseover', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -113,10 +90,11 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
     };
 
     document.getElementById("btnB").onclick = function () {
@@ -132,6 +110,7 @@ document.addEventListener('mouseover', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -139,10 +118,11 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
     };
 
     document.getElementById("btnC").onclick = function () {
@@ -158,6 +138,7 @@ document.addEventListener('mouseover', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -165,10 +146,11 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
     };
 
     document.getElementById("btnD").onclick = function () {
@@ -184,6 +166,7 @@ document.addEventListener('mouseover', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -191,10 +174,11 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
     };
 
     document.getElementById("btnE").onclick = function () {
@@ -210,6 +194,7 @@ document.addEventListener('mouseover', function (event) {
             wins++;
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
@@ -217,10 +202,11 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
 
-        document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
     };
 
 });
@@ -266,7 +252,7 @@ document.addEventListener('mouseover', function (event) {
         //     reset();
         // }
 
-        // document.querySelector("#compScreen").innerHTML = userGuess.toUpperCase();
+        // document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
 
 
 
