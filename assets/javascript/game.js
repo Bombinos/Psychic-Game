@@ -9,7 +9,7 @@ var computerGuess = "";
 var userGuess = "";
 var wooHoo = document.querySelector("#wooHoo");
 
-wooHoo.pause();
+
 
 var updateGuessesLeft = function () {
     document.querySelector("#guesses-left").innerHTML = guessesLeft;
@@ -40,7 +40,7 @@ document.querySelector("#smile").style.display = "none";
 document.addEventListener('keydown', function (event) {
     if ((event.code == 'KeyA') || (event.code == 'KeyB') || (event.code == 'KeyC') || (event.code == 'KeyD') || (event.code == 'KeyE')) {
         var userGuess = event.key;
-
+        
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
@@ -83,6 +83,7 @@ document.addEventListener('keydown', function (event) {
 
 
 document.addEventListener('mouseover', function (event) {
+    wooHoo.pause();
 
     document.getElementById("btnA").onclick = function () {
         userGuess = "a";
