@@ -80,6 +80,7 @@ document.addEventListener('keydown', function (event) {
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
+            document.querySelector("#wooHoo").play();
             reset();
         }
 
@@ -116,6 +117,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            document.querySelector("#wooHoo").play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
