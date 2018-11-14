@@ -9,6 +9,8 @@ var computerGuess = "";
 var userGuess = "";
 var wooHoo = document.querySelector("#wooHoo");
 
+wooHoo.pause();
+
 var updateGuessesLeft = function () {
     document.querySelector("#guesses-left").innerHTML = guessesLeft;
 };
@@ -32,7 +34,7 @@ var reset = function () {
 updateComputerGuess();
 document.querySelector("#eyes").style.display = "none";
 document.querySelector("#smile").style.display = "none";
-wooHoo.pause();
+
 
 
 document.addEventListener('keydown', function (event) {
@@ -41,6 +43,8 @@ document.addEventListener('keydown', function (event) {
 
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -52,6 +56,7 @@ document.addEventListener('keydown', function (event) {
             wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -62,6 +67,7 @@ document.addEventListener('keydown', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
@@ -91,9 +97,10 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
-            document.querySelector("#wooHoo").play();
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -104,6 +111,7 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
@@ -124,8 +132,10 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -136,6 +146,7 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
@@ -156,8 +167,10 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -168,6 +181,7 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
@@ -188,8 +202,10 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -200,6 +216,7 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
@@ -220,8 +237,10 @@ document.addEventListener('mouseover', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "limegreen";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
@@ -232,6 +251,7 @@ document.addEventListener('mouseover', function (event) {
             losses++;
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             reset();
         }
