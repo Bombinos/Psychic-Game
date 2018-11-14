@@ -38,10 +38,12 @@ document.querySelector("#smile").style.display = "none";
 
 
 
+
 document.addEventListener('keydown', function (event) {
     if ((event.code == 'KeyA') || (event.code == 'KeyB') || (event.code == 'KeyC') || (event.code == 'KeyD') || (event.code == 'KeyE')) {
         var userGuess = event.key;
-        
+        wooHoo.load();
+        ooh.load();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
