@@ -105,6 +105,7 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -132,6 +133,7 @@ document.addEventListener('mouseover', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
@@ -143,6 +145,7 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -170,6 +173,7 @@ document.addEventListener('mouseover', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
@@ -181,6 +185,7 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -208,6 +213,7 @@ document.addEventListener('mouseover', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
@@ -219,6 +225,7 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -246,6 +253,7 @@ document.addEventListener('mouseover', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
@@ -257,6 +265,7 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -284,6 +293,7 @@ document.addEventListener('mouseover', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
