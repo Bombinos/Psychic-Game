@@ -208,7 +208,8 @@ button:focus {
         border-bottom-style: solid;
         border-bottom-width: 5px;
         font-size: 40px;
-        margin: 10px 0px 0px 0px; 
+        margin: 10px 0px 0px 0px;
+        width: 100%;
     }
     
     h3 {
@@ -233,8 +234,7 @@ button:focus {
     }
     
     #container {
-        display: inline-block;
-        text-align: center;
+        width: 100%;
     }
     
     p {
@@ -242,21 +242,17 @@ button:focus {
         text-align: center;
         color: rgb(78, 22, 116);
         font-size: 24px;
-        display: inline-block;
-        margin: 0px 10px 0px 10px;
+        margin: 20px 10px 20px 10px;
     }
     
     #row {
         text-align: center;
-        display: inline;
     }
     
     #picContainer {
+       height: 250px;
        width: auto;
        text-align: center;
-       display: inline-block;
-       height: 250px;
-        
     }
     
     #imageWrap {
@@ -266,13 +262,49 @@ button:focus {
         height: 230px;
      }
 
-    img {
+     #futureMan {
         display: block;  
         height:230px;
         border: rgb(78, 22, 116);
         border-style: solid;
         border-width: 2px;
         border-radius: 20px;
+    }
+    
+    #eyes {
+        z-index: 3;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:17.8%;
+        top: 35.2%;
+    }
+    
+    #eyesLose {
+        z-index: 3;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:17.8%;
+        top: 35.2%;
+    }
+    
+    #smile {
+        z-index: 3;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:22%;
+        top: 47.5%;
+    }
+    
+    #frown {
+        z-index: 3;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:22%;
+        top: 47.5%;
     }
     
     #cloudScreen {
@@ -435,13 +467,49 @@ button:focus {
         margin: 0px;
      }
 
-    img {
+     #futureMan {
         display: block;  
         height:230px;
         border: rgb(78, 22, 116);
         border-style: solid;
         border-width: 2px;
         border-radius: 20px;
+    }
+    
+    #eyes {
+        z-index: 3;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:17.8%;
+        top: 35.2%;
+    }
+    
+    #eyesLose {
+        z-index: 3;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:17.8%;
+        top: 35.2%;
+    }
+    
+    #smile {
+        z-index: 3;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:22%;
+        top: 47.5%;
+    }
+    
+    #frown {
+        z-index: 3;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left:22%;
+        top: 47.5%;
     }
     
     #cloudScreen {
