@@ -7,6 +7,7 @@ var guessesLeft = 3;
 var guesses = [];
 var computerGuess = "";
 var userGuess = "";
+var wooHoo = document.querySelector("#wooHoo");
 
 var updateGuessesLeft = function () {
     document.querySelector("#guesses-left").innerHTML = guessesLeft;
@@ -20,33 +21,6 @@ var updateGuesses = function () {
     document.querySelector("#userGuess").innerHTML = guesses.join(", ");
 };
 
-
-// function winReact() {
-//     var x = document.getElementById("eyes");
-//     if (x.style.display === "none") {
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
-// }
-
-// var eyeReact = function() {
-//     var x = document.getElementById("eyes");
-//     if (x.display === "none") {
-//         x.display = "block";
-//     } else {
-//         x.display = "none";
-//     }
-// }
-
-// var eyeOpen = function() {
-//     document.querySelector("#eyes").display === "block";
-// }
-
-// var eyeShut = function() {
-//     document.querySelector("#eyes").display === "none";
-// }
-
 var reset = function () {
     guessesLeft = 3;
     guesses = [];
@@ -58,6 +32,7 @@ var reset = function () {
 updateComputerGuess();
 document.querySelector("#eyes").style.display = "none";
 document.querySelector("#smile").style.display = "none";
+wooHoo.pause();
 
 
 document.addEventListener('keydown', function (event) {
@@ -66,7 +41,6 @@ document.addEventListener('keydown', function (event) {
 
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
-        // document.querySelector("#mouthWrap").style.display = "none";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -75,12 +49,12 @@ document.addEventListener('keydown', function (event) {
 
         if (userGuess == computerGuess) {
             wins++;
+            wooHoo.play();
             document.querySelector("#wins").innerHTML = wins;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#eyes").style.display = "block";
             document.querySelector("#smile").style.display = "block";
-            document.querySelector("#wooHoo").play();
             reset();
         }
 
