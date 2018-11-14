@@ -85,14 +85,16 @@ document.addEventListener('keydown', function (event) {
 
 
 document.addEventListener('mouseover', function (event) {
-    wooHoo.pause();
-    ooh.pause();
+    wooHoo.load();
+    ooh.load();
 
     document.getElementById("btnA").onclick = function () {
         userGuess = "a";
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -129,6 +131,8 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -165,6 +169,8 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -201,6 +207,8 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
@@ -237,6 +245,8 @@ document.addEventListener('mouseover', function (event) {
         console.log(userGuess);
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#compScreen").style.color = "black";
+        document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
         guesses.push(userGuess.toUpperCase());
 
