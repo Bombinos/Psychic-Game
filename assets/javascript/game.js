@@ -9,12 +9,15 @@ var computerGuess = "";
 var userGuess = "";
 var wooHoo = document.querySelector("#wooHoo");
 var ooh = document.querySelector("#ooh");
+var bgMusic = document.querySelector("#bgMusic");
 
 var load = function() {
+    bgMusic.volume = 0.3;
+    bgMusic.play();
     wooHoo.load();
     ooh.load();
 }
-load();
+
 
 
 var updateGuessesLeft = function () {
@@ -48,8 +51,8 @@ document.querySelector("#eyesLose").style.display = "none";
 document.addEventListener('keydown', function (event) {
     if ((event.code == 'KeyA') || (event.code == 'KeyB') || (event.code == 'KeyC') || (event.code == 'KeyD') || (event.code == 'KeyE')) {
         var userGuess = event.key;
-        wooHoo.load();
-        ooh.load();
+
+        load();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
