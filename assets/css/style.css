@@ -87,6 +87,15 @@ p {
     top: 35.2%;
 }
 
+#eyesLose {
+    z-index: 3;
+    height: 51px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left:17.8%;
+    top: 35.2%;
+}
+
 #smile {
     z-index: 3;
     height: 28px;

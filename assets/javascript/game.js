@@ -10,6 +10,11 @@ var userGuess = "";
 var wooHoo = document.querySelector("#wooHoo");
 var ooh = document.querySelector("#ooh");
 
+var load = function() {
+    wooHoo.load();
+    ooh.load();
+}
+load();
 
 
 var updateGuessesLeft = function () {
@@ -35,6 +40,7 @@ var reset = function () {
 updateComputerGuess();
 document.querySelector("#eyes").style.display = "none";
 document.querySelector("#smile").style.display = "none";
+document.querySelector("#eyesLose").style.display = "none";
 
 
 
@@ -46,6 +52,7 @@ document.addEventListener('keydown', function (event) {
         ooh.load();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
+        document.querySelector("#eyesLose").style.display = "none";
         document.querySelector("#compScreen").style.color = "black";
         document.querySelector("#compScreen").innerHTML = "?";
         guessesLeft--
@@ -73,6 +80,7 @@ document.addEventListener('keydown', function (event) {
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
             document.querySelector("#compScreen").innerHTML = computerGuess.toUpperCase();
+            document.querySelector("#eyesLose").style.display = "block";
             reset();
         }
 
