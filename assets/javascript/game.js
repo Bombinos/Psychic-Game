@@ -8,6 +8,7 @@ var guesses = [];
 var computerGuess = "";
 var userGuess = "";
 var wooHoo = document.querySelector("#wooHoo");
+var ooh = document.querySelector("#ooh");
 
 
 
@@ -65,6 +66,7 @@ document.addEventListener('keydown', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
@@ -84,6 +86,7 @@ document.addEventListener('keydown', function (event) {
 
 document.addEventListener('mouseover', function (event) {
     wooHoo.pause();
+    ooh.pause();
 
     document.getElementById("btnA").onclick = function () {
         userGuess = "a";
@@ -110,6 +113,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
@@ -145,6 +149,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
@@ -180,6 +185,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
@@ -215,6 +221,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
@@ -250,6 +257,7 @@ document.addEventListener('mouseover', function (event) {
 
         if (guessesLeft == 0) {
             losses++;
+            ooh.play();
             document.querySelector("#losses").innerHTML = losses;
             document.querySelector("#computerGuess").innerHTML = computerGuess.toUpperCase();
             document.querySelector("#compScreen").style.color = "red";
