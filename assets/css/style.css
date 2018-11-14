@@ -69,13 +69,31 @@ p {
    height: 400px;
 }
 
-img {
+#futureMan {
     display: block;  
     height:400px;
     border: rgb(78, 22, 116);
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
+}
+
+#eyes {
+    z-index: 3;
+    height: 51px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left:17.8%;
+    top: 35.2%;
+}
+
+#smile {
+    z-index: 3;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left:22%;
+    top: 47.5%;
 }
 
 #cloudScreen {
