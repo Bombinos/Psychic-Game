@@ -105,6 +105,15 @@ p {
     top: 47.5%;
 }
 
+#frown {
+    z-index: 3;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left:22%;
+    top: 47.5%;
+}
+
 #cloudScreen {
     line-height: smaller;
     vertical-align: middle;
