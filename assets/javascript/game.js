@@ -98,9 +98,8 @@ document.addEventListener('keydown', function (event) {
 
 
 document.addEventListener('mouseover', function (event) {
-    wooHoo.load();
-    ooh.load();
-
+    
+    load();
     document.getElementById("btnA").onclick = function () {
         userGuess = "a";
         console.log(userGuess);
