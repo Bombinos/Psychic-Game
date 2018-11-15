@@ -94,8 +94,6 @@ document.addEventListener('keydown', function (event) {
 
         document.querySelector("#cloudScreen").innerHTML = userGuess.toUpperCase();
 
-    }else {
-        alert("Wrong Key. Please select A, B, C, or D");
     }
 });
 
