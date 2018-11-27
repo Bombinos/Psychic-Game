@@ -7,18 +7,21 @@ var guessesLeft = 3;
 var guesses = [];
 var computerGuess = "";
 var userGuess = "";
-var wooHoo = document.querySelector("#wooHoo");
-var ooh = document.querySelector("#ooh");
-var bgMusic = document.querySelector("#bgMusic");
+var bgMusic = document.createElement("audio");
+bgMusic.setAttribute('src', 'assets/audio/xfilestheme.mp3');
+var wooHoo = document.createElement("audio");
+wooHoo.setAttribute('src', 'assets/audio/ding.mp3');
+var ooh = document.createElement("audio");
+ooh.setAttribute('src', 'assets/audio/ooh.mp3');
+
 
 var load = function() {
     bgMusic.volume = 0.3;
-    bgMusic.play();
     wooHoo.load();
     ooh.load();
 }
 
-
+load();
 
 var updateGuessesLeft = function () {
     document.querySelector("#guesses-left").innerHTML = guessesLeft;
@@ -52,8 +55,8 @@ document.querySelector("#frown").style.display = "none";
 document.addEventListener('keydown', function (event) {
     if ((event.code == 'KeyA') || (event.code == 'KeyB') || (event.code == 'KeyC') || (event.code == 'KeyD') || (event.code == 'KeyE')) {
         var userGuess = event.key;
-
         load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
@@ -100,10 +103,12 @@ document.addEventListener('keydown', function (event) {
 
 document.addEventListener('mouseover', function (event) {
     
-    load();
+    
     document.getElementById("btnA").onclick = function () {
         userGuess = "a";
         console.log(userGuess);
+        load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
@@ -146,6 +151,8 @@ document.addEventListener('mouseover', function (event) {
     document.getElementById("btnB").onclick = function () {
         userGuess = "b"
         console.log(userGuess);
+        load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
@@ -188,6 +195,8 @@ document.addEventListener('mouseover', function (event) {
     document.getElementById("btnC").onclick = function () {
         userGuess = "c";
         console.log(userGuess);
+        load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
@@ -230,6 +239,8 @@ document.addEventListener('mouseover', function (event) {
     document.getElementById("btnD").onclick = function () {
         userGuess = "d";
         console.log(userGuess);
+        load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
@@ -272,6 +283,8 @@ document.addEventListener('mouseover', function (event) {
     document.getElementById("btnE").onclick = function () {
         userGuess = "e";
         console.log(userGuess);
+        load();
+        bgMusic.play();
         document.querySelector("#eyes").style.display = "none";
         document.querySelector("#smile").style.display = "none";
         document.querySelector("#eyesLose").style.display = "none";
